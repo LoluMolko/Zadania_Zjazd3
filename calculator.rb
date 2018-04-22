@@ -9,27 +9,27 @@ class Calculator
 
   def add(number)
     @result += number
-    @history << "add #{number} (result: #{@result})"
+    history << "add #{number} (result: #{@result})"
   end
 
   def subtract(number)
     @result -= number
-    @history << "subtract #{number} (result: #{@result})"
+    history << "subtract #{number} (result: #{@result})"
   end
 
   def multiply(number)
     @result *= number
-    @history << "multiply #{number} (result: #{@result})"
+    history << "multiply #{number} (result: #{@result})"
   end
 
   def divide(number)
     @result /= number
-    @history << "divide #{number} (result: #{@result})"
+    history << "divide #{number} (result: #{@result})"
   end
 
   def clear
     @result = 0
-    @history << "clear (result: #{@result})"
+    history << "clear (result: #{@result})"
   end
 
   def change_sign
@@ -40,11 +40,11 @@ class Calculator
     else
       @result = 0
     end
-    @history << "change_sign (result: #{@result})"
+    history << "change_sign (result: #{@result})"
   end
 
   def print_history
-    puts @history
+    puts history
   end
 end
 

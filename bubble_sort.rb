@@ -4,8 +4,7 @@ class BubbleSort
 
     sorted = ary.sort
     if ary == sorted
-      puts "Array is sorted!"
-      exit
+      return "Array is sorted!"
     end
 
     while ary != sorted
